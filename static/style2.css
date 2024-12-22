@@ -1,0 +1,118 @@
+/* Gaya umum untuk seluruh halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Gaya untuk kontainer utama */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Gaya untuk navigasi samping */
+aside {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya untuk konten utama */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+main h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk daftar anggota tim */
+main ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main ul li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+main ul li img.member-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+main ul li h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+main ul li p {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+main ul li p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+main ul li p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif untuk perangkat dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  aside {
+      width: 100%;
+      text-align: center;
+  }
+
+  main ul li {
+      width: 100%;
+  }
+}
